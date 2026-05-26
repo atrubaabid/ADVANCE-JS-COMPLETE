@@ -139,6 +139,116 @@
 // =====================================================================
 
 
+//ARRAY METHODS WHO CANNOT CHANGE ORIGINAL ARRAY
+
+
+// let l = ["red", "green", "blue", "yellow", "gray"];
+// let arr = l.slice(2, 4);
+// console.log(arr);
+// console.log(l);
+
+
+// let l = ["red", "green", "blue", "yellow", "gray"];
+// let a = ["1", "green", "blue", "yellow", "gray"];
+// let b = ["2", "green", "blue", "yellow", "gray"];
+// let arr= l.concat(a,b);
+// console.log(arr);
+
+// let l = ["red", "green", "blue", "yellow", "gray"];
+// let n = [2, 3, 4, 5];
+// console.log(l.includes("red"));
+// console.log(l.indexOf("grayyy"));
+// console.log(l.join("-"));
+// console.log(l.toString());
+// console.log(n.toString());
+
+//PRACTICE QUESTION
+
+// let a = [1, 2, 3, 4];
+// let b = [3, 4, 5, 6];
+
+
+
+// for (let v of a) {
+
+//     if (b.includes(v)) {
+//         console.log(v);
+
+//     }
+
+// }
+
+// ==============================================
+
+
+// let a = [1, 2, 3, 4, 3, 4, 2, 1, 8, 9];
+// let arr = [];
+
+// for (let v of a) {
+//     if (!arr.includes(v)) {
+//         arr.push(v);
+//     }
+// }
+// console.log(arr);
+
+// ========================================================
+
+
+// let a = [9999, 22, 11, 44, 55, 66, 77, 88];
+// let Greater = [];
+
+// for (let v of a) {
+
+//     console.log(v);
+//     if (v >= Greater)
+//         Greater = v;
+// }
+
+// console.log(Greater);
+
+
+// ========================================================
+
+//REVERSE GAME
+
+// let alp = [111, 222, 333, 444, 555, 666, 777];
+// let alp2 = [];
+// for (i = alp.length - 1; i >= 0; i--) {
+
+//     alp2.push(alp[i])
+// }
+// console.log(alp2);
+
+// ========================================================
+
+
+
+// let alp = [111, 222, 333, 444, 555, 666, 777];
+// let alp2 = [];
+// for (let v of alp) {
+//     alp2.unshift(v)
+// }
+// console.log(alp2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
