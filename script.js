@@ -601,13 +601,80 @@
 // }
 
 
-for (i = 20; i >= 1; i--) {
-    console.log(i);
+// for (i = 20; i >= 1; i--) {
+//     console.log(i);
 
-}
+// }
+
+
+// =====================================================================/
 
 
 
+// let num = +prompt("Enter any number");
+// let isPrime = true;
+
+
+// for (i = 2; i < num; i++) {
+
+//     if (num % i === 0) {
+//         isPrime = false;
+//         break
+//     }
+// }
+
+
+// if (isPrime) {
+//     console.log("PRIME NUMBER");
+
+// } else {
+//     console.log("NOT A PRIME NUMBER");
+
+// }
+
+// =====================================================================/
+
+
+// let num = +prompt("Enter any number");
+// let addnumber = 0;
+
+// for (i = 1; i < num; i++) {
+//     if (num % i === 0) {
+
+//         addnumber += i
+//     }
+// }
+
+// console.log(addnumber);
+
+// if (addnumber === num) {
+//     console.log("PERFECT NUMBER");
+
+// } else {
+
+//     console.log("NOT A PERFECT NUMBER");
+// }
+
+// =====================================================================/
+
+
+// let num = ;
+// let reverse = 0;
+
+
+// while (num > 0) {
+//     let lastdigit = num % 10;
+//     reverse = reverse * 10 + lastdigit;
+//     num = parseInt(num / 10)
+
+
+// }
+
+// console.log(reverse);
+
+
+
+// =====================================================================/
 
 
 
