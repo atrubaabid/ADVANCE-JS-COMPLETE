@@ -10,7 +10,7 @@
 // console.log(user.name);
 // console.log(user.email);
 // console.log(user.isStudent);
-// console.log(user['123']);  
+// console.log(user['123']);
 
 
 
@@ -91,6 +91,105 @@
 // =================================================
 
 // NESTED DESTRUCTURING
+
+
+// let user = {
+//     name: "Atruba",
+//     email: "atruba@gmail.com",
+//     isStudent: true,
+//     myLove: {
+//         car: "BMW",
+//         color: "Black"
+//     },
+//     123: "LL",
+// }
+
+// let { myLove: { car, color } } = user
+// console.log(car);
+// console.log(color);
+
+
+// =================================================
+
+//BASIC ARRAY DESTRUCTURING
+
+// let colors = ["red", "green", "blue", "black"];
+// let [a, b, c] = colors
+// console.log(a, b, c)
+
+
+
+//when want to get rest of elemnts
+// let [a, b, ...c] = colors
+// console.log(a, b, c)
+
+
+
+
+// =================================================
+
+// SKIP ELEMENTS
+
+// let l = [10, 20, 30, 40, 50];
+// let [, , three] = l
+// console.log(three);
+
+
+// =================================================
+
+//DEEP COPY
+
+//this one update both
+
+// let a = [1, 2, 3, 4, 5, 6];
+// let b = a;
+// console.log(a);
+// console.log(b);
+// b.push(7);
+// console.log(a);
+// console.log(b);
+
+
+// =================================================
+
+//SHALLOW COPY
+
+//dont change original array
+
+// let a = [1, 2, 3, 4, 5, 6];
+// let b = [...a]
+// console.log(a);
+// console.log(b);
+// b.push(7);
+
+// console.log(a);
+// console.log(b);
+
+// =================================================
+
+//PRACTICE QUESTION
+
+// let a = [1, 2, 3, 4, 5, 6];
+// let [first, , third] = a
+// console.log(first, third);
+
+// =================================================
+
+// let user = {
+//     name: "Atruba",
+//     address: {
+//         city: "Karachi",
+//     }
+// }
+// let { address: { city } } = user
+// console.log(city);
+
+
+
+
+
+
+
 
 
 
