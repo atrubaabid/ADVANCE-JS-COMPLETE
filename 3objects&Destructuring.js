@@ -184,6 +184,17 @@
 // let { address: { city } } = user
 // console.log(city);
 
+// =================================================
+
+// let a = [1, 2];
+// let b = [3, 4];
+// console.log(...a, ...b);
+// console.log([...a, ...b]);
+
+
+// //when you want to add value start and end
+// a = [0, ...a, "z"]
+// console.log(a);
 
 
 
