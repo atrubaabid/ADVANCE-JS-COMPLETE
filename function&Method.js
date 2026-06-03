@@ -1,3 +1,35 @@
+// displayData()
+
+// function displayData() {
+//     document.write("Atruba")
+// }
+// displayData()
+// =================================================
+
+
+// function displayData() {
+//     document.write("Atruba")
+// }
+
+// =================================================
+
+
+// function showName(name){
+//     console.log("welcome", name);
+
+
+// }
+
+// showName("Atruba")
+
+// =================================================
+
+// function addData(a, b) {
+//     console.log(a + b);
+
+// }
+
+// addData(10, 20)
 
 // =================================================
 
