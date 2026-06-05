@@ -213,6 +213,48 @@
 
 // =================================================
 
+//ENQUIRY MODAL
+
+// let btn = document.querySelector("#modal")
+// let div = document.querySelector(".modalDiv")
+// let span = document.querySelector("span")
+// span.addEventListener("click", () => {
+//     div.style.top = "-50%"
+
+// })
+
+// btn.addEventListener("click", () => {
+//     div.style.top = "50%"
+// })
+
+
+// =================================================
+
+//ADD ,REMOVE, TOGGLE CLASS
+
+// let add = document.querySelector(".add")
+// let remove = document.querySelector(".remove")
+// let toggle = document.querySelector(".toggle")
+// let name = document.querySelector(".name")
+
+// //add
+// add.addEventListener("click", () => {
+//     name.classList.add("active")
+// })
+// //remove
+// remove.addEventListener("click", () => {
+//     name.classList.remove("active")
+// })
+// //toggle
+// toggle.addEventListener("click", () => {
+//     name.classList.toggle("active")
+// })
+
+
+// =================================================
+
+//TASK 1
+
 
 
 

@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+.modalDiv {
+    position: fixed;
+    width: 350px;
+    height: 350px;
+    box-shadow: 0px 0px 10px 2px #ccc;
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    background-color: aqua;
+
+
+}
+
+#modal{
+    cursor: pointer;
+
+}
+
+
+
+.modalDiv h2 {
+    text-align: center;
+    border-bottom: 1px solid #cccc;
+    padding: 10px 0;
+}
+
+.modalDiv h2 span {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+.active{
+background-color: red;
+color: white;
+}
