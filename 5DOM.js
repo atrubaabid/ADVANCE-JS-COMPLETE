@@ -255,6 +255,83 @@
 
 //TASK 1
 
+// let text = document.querySelector("textarea")
+// let len = document.querySelector("span")
+// let div = document.querySelector(".resDiv")
+
+// text.addEventListener("keyup", () => {
+//     div.innerHTML = text.value
+//     len.innerHTML = text.value.length
+
+
+// })
+
+
+// =================================================
+
+//TASK 2
+
+// let color = document.querySelector(".colorChanger")
+// let body = document.querySelector("body");
+// color.addEventListener("click", () => {
+//     let redc = Math.floor(Math.random() * 255)
+//     let greenc = Math.floor(Math.random() * 255)
+//     let bluec = Math.floor(Math.random() * 255)
+
+//     body.style.backgroundColor = `rgb( ${redc}, ${greenc}, ${bluec} )`
+// })
+
+
+// =================================================
+
+//TASK 3
+
+
+// let btn = document.querySelector('.btn')
+// let body = document.querySelector("body");
+
+// btn.addEventListener("click", () => {
+
+//     body.classList.toggle("mode")
+
+// })
+
+
+// =================================
+
+
+// let dark = document.querySelector('.dark')
+// let light = document.querySelector('.light')
+// let body = document.querySelector("body");
+
+// dark.addEventListener("click", () => {
+
+//     body.style.backgroundColor = "black"
+//     body.style.color = "white"
+
+// })
+
+
+// light.addEventListener("click", () => {
+
+//     body.style.backgroundColor = "white"
+//     body.style.color = "dark"
+
+// })
+
+
+
+
+//COMPLETED
+
+
+
+
+
+
+
+
+
 
 
 
