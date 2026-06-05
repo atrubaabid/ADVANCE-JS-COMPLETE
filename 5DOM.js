@@ -68,5 +68,157 @@
 
 // ==============================================
 
+//QUERY SELECTOR ALL
+
+// let li = document.querySelectorAll("li");
+// console.log(li);
+
+// li.forEach((li, i) => {
+//     console.log(li.innerText = `item ${i}`);
+// })
+
+// ==============================================
+
+// EVENTS
+
+//ye onclick per kam krega
+
+// let password = document.querySelector("#pass")
+// let btn = document.querySelector("#btn")
+
+// function showData() {
+//     if (password.type == "password") {
+//         password.type = "text"
+//         btn.innerHTML = "Hide"
+//         console.log(password.type);
+
+
+//     } else {
+//         password.type = "password"
+//         btn.innerHTML = "Show"
+//         console.log(password.type);
+
+//     }
+// }
+
+// ==============================================
+
+// EVENTLISTENER
+
+
+// let password = document.querySelector("#pass")
+
+// let btn = document.querySelector("#btn")
+// // addEventListener with callback
+// btn.addEventListener("click", showData)
+
+// function showData() {
+//     if (password.type == "password") {
+//         password.type = "text"
+//         btn.innerHTML = "Hide"
+//         console.log(password.type);
+
+
+//     } else {
+//         password.type = "password"
+//         btn.innerHTML = "Show"
+//         console.log(password.type);
+
+//     }
+// }
+
+// =================================================
+
+
+// addEventListener with their arrow function fire
+
+// let password = document.querySelector("#pass")
+
+// let btn = document.querySelector("#btn")
+// btn.addEventListener("click", () => {
+//     if (password.type == "password") {
+//         password.type = "text"
+//         btn.innerHTML = "Hide"
+//         console.log(password.type);
+
+
+//     } else {
+//         password.type = "password"
+//         btn.innerHTML = "Show"
+//         console.log(password.type);
+
+//     }
+
+// })
+
+// =================================================
+
+//PRACTICE EVENT LISTENER
+
+// let h1 = document.querySelector(".h1")
+// let p = document.querySelector(".p")
+// let btn = document.querySelector("#btn")
+
+// console.log(h1);
+// console.log(p);
+
+// btn.addEventListener("click", () => {
+//     console.log(h1);
+//     console.log(p);
+
+
+//     h1Data = h1.innerHTML
+
+//     pData = p.innerHTML
+
+
+//     h1.innerHTML = pData
+//     p.innerHTML = h1Data
+
+
+// })
+
+// =================================================
+
+// CSS STYLING WITH JS
+
+// let allh1 = document.querySelectorAll("h1")
+// let allp = document.querySelectorAll("p")
+// let allbtn = document.querySelectorAll("button")
+// let inputs = document.querySelectorAll("input")
+
+// let clr = document.querySelector("#clr");
+
+// clr.addEventListener("click", () => {
+
+//     allh1.forEach((el) => {
+//         el.style.color = "red"
+//     })
+
+//     allp.forEach((el) => {
+//         el.style.color = "blue"
+//     })
+
+//     allbtn.forEach((el) => {
+//         el.style.backgroundColor = "yellow"
+//     })
+
+//     inputs.forEach((el) => {
+//         el.style.backgroundColor = "purple"
+//     })
+
+
+// })
+
+
+// =================================================
+
+
+
+
+
+
+
+
 
 
