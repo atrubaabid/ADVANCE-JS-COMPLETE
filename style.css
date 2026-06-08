@@ -50,3 +50,11 @@ color: white;
     background-color: black;
     color: white;
 }
+
+.main{
+    width: 1000px;
+    height: 500px;
+    background-color: rgb(214, 214, 214);
+    /* display: none; */
+    padding: 50px;
+}
