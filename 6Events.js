@@ -112,7 +112,6 @@
 
 // mainDiv.addEventListener("click", (e) => {
 
-//     console.log("ousidediv");  //when you click parent its work
 
 //     if (e.target.tagName == "BUTTON") {
 //         console.log("Atruba"); //when you click button then this work
@@ -124,6 +123,31 @@
 // =======================================================
 
 //EVENT BUBBLING WITH STOP PROPAGATION
+
+// BUBBLING
+
+
+// let mainDiv = document.querySelector(".main");
+// let btn = document.querySelector(".btn")
+
+
+// mainDiv.addEventListener("click", (e) => {
+//     console.log("ousidediv");
+// })
+
+
+
+// btn.addEventListener("click", (e) => {
+//     console.log("button"); //BUBBLING bcz when this btn clicked maindiv also run
+//     e.stopPropagation(); //This one stop bubbling
+
+// })
+
+
+// =======================================================
+
+
+
 
 
 
