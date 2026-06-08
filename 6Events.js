@@ -74,10 +74,20 @@
 
 // FORM EVENTS
 
+// submit   = form submitted
+// change   = Value changed (select, checkbox, etc.)
+// input    = Value entered in real-time
+// focus    = input gets focus
+// blur     = input loses focus
+
 
 // =======================================================
 
 // WINDOW EVENTS
+
+// load        = page fully loaded
+// scroll      = page scroll
+// resize      = window size change
 
 
 // LOAD
@@ -85,6 +95,16 @@
 // window.addEventListener("load", () => {
 //     mainDiv.style.display = "block"
 // })
+
+// =======================================================
+
+// CLIPBOARD EVENTS
+
+//copy      = Copy Content
+//cut       = Cut Content
+//paste     = Paste Content
+
+
 
 
 // =======================================================
