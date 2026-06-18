@@ -41,7 +41,7 @@
 // })
 
 // ==============================================
-//alag arrow function bna k usko as a call back map me pass krna
+//alag arrow function bna k usko as a call-back map me pass krna
 
 // let a = [1, 2, 3, 4, 5];
 // let square = (v) => v ** v;
@@ -59,12 +59,17 @@
 
 
 // let a = [0, 3, , 0, 60, 9, 30, 77, 88];
-// a.filter((v) => {
+//  let res = a.filter((v) => {
 //     if (v % 3 === 0 && v != 0) {
-//         console.log(v);
-
+//         // console.log([v]);
+//         // console.log(v);
+//         return v
+        
 //     }
 // })
+
+// console.log(res);
+
 
 
 // ==============================================

@@ -7,10 +7,20 @@
 // console.log(user[user.length-3]);
 
 
+
+
 //NESTED ARRAY
+
+// let user = [10, 20, 30, 40, 50, 60, 70, [1, 2, 3], 5, 7, 9];
 // console.log(user[7][2]);
 
+
+
+
+
 //FOR LOOP
+
+// let user = [10, 20, 30, 40, 50, 60, 70,3,5,7,9];
 
 // for (i = 0; i < user.length; i++) {
 //     console.log(user[i]);
@@ -20,7 +30,7 @@
 // console.log("");
 // console.log("");
 
-
+// let user = [10, 20, 30, 40, 50, 60, 70,3,5,7,9];
 
 // for (i = user.length - 1; i > 0; i--) {
 //     console.log(user[i]);
@@ -28,14 +38,25 @@
 // }
 
 
+
+
+
+
 //FOR OF LOOP
 
+// let user = [10, 20, 30, 40, 50, 60, 70,3,5,7,9];
 // for (let v of user) {
 //     console.log(v);
 
 // }
 
+
+
+
+
 //FOR IN LOOP
+
+// let user = [10, 20, 30, 40, 50, 60, 70,3,5,7,9];
 
 // for (let v in user) {
 //     console.log(v, user[v]);
@@ -43,19 +64,30 @@
 // }
 
 
+
+
+
 //SUM PROGRAM
+
+// let user = [10, 20, 30, 40, 50, 60, 70, 3, 5, 7, 9];
 
 // let sum = 0;
 // for (let v of user) {
-//     console.log(v);
-//     sum+=v
-
+//   console.log(v);
+//   sum += v;
 // }
 
 // console.log(sum);
 
 
-//EVEN NUMBER PROGRAM
+
+
+
+
+
+//EVEN NUMBER PROGRAM'
+
+// let user = [10, 20, 30, 40, 50, 60, 70,3,5,7,9];
 
 // for(let v of user){
 //     if(v%2===0){
@@ -65,10 +97,18 @@
 // }
 
 
+
+
+
+
 //UPDATE ARRAY
 
+// let user = [10, 20, 30, 40, 50, 60, 70,3,5,7,9];
 // user[1]= 222;
 // console.log(user);
+
+
+// =====================================================================
 
 
 //ARRAY METHODS WHO CHANGE ORIGINAL ARRAY
@@ -83,13 +123,11 @@
 // a.pop()
 // console.log(a);
 
-
 // a.shift()                   //remove start
 // console.log(a);
 
 // a.unshift(1234)             //add start
 // console.log(a);
-
 
 // a.splice(3,1,);    //delete in splice
 
@@ -106,19 +144,17 @@
 // a.reverse()        //reverse all the condition
 // console.log(a);
 
-
-//your value, start position, end poistion 
-
+//your value, start position, end poistion
 
 // a.fill(9, 2, 3)          //change value
 // console.log(a);
 
+// =====================================================================
+
 
 //LOGICAL QUESTION
 
-
 // jb ham array ko loop me remove ker rahy hoty hyn tw end me 2 elements bach jaty hyn or choty array me loop nhi chlta
-
 
 // let a = [20, 50, 80, 10, 40];
 // for (let g of a) {
@@ -127,26 +163,22 @@
 
 // }
 
-
 // =====================================================================
 
-// let r=[1,2,3,4];
-// for(let v of r){
-//     r[3]=v
+// let r = [1, 2, 3, 4];
+// for (let v of r) {
+//   r[3] = v;
 // }
 // console.log(r);
 
 // =====================================================================
 
-
 //ARRAY METHODS WHO CANNOT CHANGE ORIGINAL ARRAY
-
 
 // let l = ["red", "green", "blue", "yellow", "gray"];
 // let arr = l.slice(2, 4);
 // console.log(arr);
 // console.log(l);
-
 
 // let l = ["red", "green", "blue", "yellow", "gray"];
 // let a = ["1", "green", "blue", "yellow", "gray"];
@@ -156,18 +188,23 @@
 
 // let l = ["red", "green", "blue", "yellow", "gray"];
 // let n = [2, 3, 4, 5];
-// console.log(l.includes("red"));
-// console.log(l.indexOf("grayyy"));
+// console.log(l.includes("red"));         //true
+// console.log(l.indexOf("gray"));         //4
 // console.log(l.join("-"));
 // console.log(l.toString());
 // console.log(n.toString());
+
+
+
+// =====================================================================
+
+
+
 
 //PRACTICE QUESTION
 
 // let a = [1, 2, 3, 4];
 // let b = [3, 4, 5, 6];
-
-
 
 // for (let v of a) {
 
@@ -178,8 +215,7 @@
 
 // }
 
-// ==============================================
-
+// =====================================================
 
 // let a = [1, 2, 3, 4, 3, 4, 2, 1, 8, 9];
 // let arr = [];
@@ -193,19 +229,17 @@
 
 // ========================================================
 
-
 // let a = [9999, 22, 11, 44, 55, 66, 77, 88];
 // let Greater = [];
 
 // for (let v of a) {
-
-//     console.log(v);
-//     if (v >= Greater)
-//         Greater = v;
+//   console.log(v);
+//   if (v >= Greater) {
+//     Greater = v;
+//   }
 // }
 
 // console.log(Greater);
-
 
 // ========================================================
 
@@ -221,61 +255,14 @@
 
 // ========================================================
 
-
+//REVERSE GAME
 
 // let alp = [111, 222, 333, 444, 555, 666, 777];
 // let alp2 = [];
 // for (let v of alp) {
 //     alp2.unshift(v)
 // }
+
 // console.log(alp2);
 
-
-
-
 // COMPLETED
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

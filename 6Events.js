@@ -51,8 +51,8 @@
 
 //KEYBOARD EVENTS
 
-// keydown    = when key pressed its worked
-// keyup      = when key pressed then released its worked
+// keydown    = when key pressed، its worked
+// keyup      = when key pressed then released، its worked
 
 // let mainDiv = document.querySelector(".main");
 

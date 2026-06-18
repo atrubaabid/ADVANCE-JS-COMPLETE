@@ -1,7 +1,7 @@
 // console.log(document.body.outerHTML);
 // console.log(document.head.outerHTML);
 // console.log(document);
-// console.log(window.document);c
+// console.log(window.document);
 
 // ==============================================
 // SELECT ELEMENT BY ID
@@ -13,6 +13,7 @@
 
 // let p = document.getElementById("para")
 // console.log(p.outerHTML);
+// console.log(p.innerHTML);
 
 // ==============================================
 
@@ -33,7 +34,6 @@
 // let inputEmail = document.querySelector(".email")
 // console.log(inputEmail);
 // console.log(inputEmail.className);
-
 
 //BY TAGNAME
 
@@ -92,7 +92,6 @@
 //         btn.innerHTML = "Hide"
 //         console.log(password.type);
 
-
 //     } else {
 //         password.type = "password"
 //         btn.innerHTML = "Show"
@@ -104,7 +103,6 @@
 // ==============================================
 
 // EVENTLISTENER
-
 
 // let password = document.querySelector("#pass")
 
@@ -118,7 +116,6 @@
 //         btn.innerHTML = "Hide"
 //         console.log(password.type);
 
-
 //     } else {
 //         password.type = "password"
 //         btn.innerHTML = "Show"
@@ -128,7 +125,6 @@
 // }
 
 // =================================================
-
 
 // addEventListener with their arrow function fire
 
@@ -140,7 +136,6 @@
 //         password.type = "text"
 //         btn.innerHTML = "Hide"
 //         console.log(password.type);
-
 
 //     } else {
 //         password.type = "password"
@@ -155,28 +150,20 @@
 
 //PRACTICE EVENT LISTENER
 
-// let h1 = document.querySelector(".h1")
-// let p = document.querySelector(".p")
-// let btn = document.querySelector("#btn")
-
-// console.log(h1);
-// console.log(p);
+// let h1 = document.querySelector(".h1");
+// let p = document.querySelector(".p");
+// let btn = document.querySelector("#btn");
 
 // btn.addEventListener("click", () => {
-//     console.log(h1);
-//     console.log(p);
+//   console.log(h1);
+//   console.log(p);
 
+//   h1Data = h1.innerHTML;
+//   pData = p.innerHTML;
 
-//     h1Data = h1.innerHTML
-
-//     pData = p.innerHTML
-
-
-//     h1.innerHTML = pData
-//     p.innerHTML = h1Data
-
-
-// })
+//   h1.innerHTML = pData;
+//   p.innerHTML = h1Data;
+// });
 
 // =================================================
 
@@ -207,9 +194,7 @@
 //         el.style.backgroundColor = "purple"
 //     })
 
-
 // })
-
 
 // =================================================
 
@@ -226,7 +211,6 @@
 // btn.addEventListener("click", () => {
 //     div.style.top = "50%"
 // })
-
 
 // =================================================
 
@@ -250,7 +234,6 @@
 //     name.classList.toggle("active")
 // })
 
-
 // =================================================
 
 //TASK 1
@@ -263,9 +246,7 @@
 //     div.innerHTML = text.value
 //     len.innerHTML = text.value.length
 
-
 // })
-
 
 // =================================================
 
@@ -281,11 +262,9 @@
 //     body.style.backgroundColor = `rgb( ${redc}, ${greenc}, ${bluec} )`
 // })
 
-
 // =================================================
 
 //TASK 3
-
 
 // let btn = document.querySelector('.btn')
 // let body = document.querySelector("body");
@@ -296,9 +275,7 @@
 
 // })
 
-
 // =================================
-
 
 // let dark = document.querySelector('.dark')
 // let light = document.querySelector('.light')
@@ -311,7 +288,6 @@
 
 // })
 
-
 // light.addEventListener("click", () => {
 
 //     body.style.backgroundColor = "white"
@@ -319,25 +295,4 @@
 
 // })
 
-
-
-
 //COMPLETED
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

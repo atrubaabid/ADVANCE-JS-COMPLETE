@@ -4,8 +4,8 @@
 //     document.write("Atruba")
 // }
 // displayData()
-// =================================================
 
+// =================================================
 
 // function displayData() {
 //     document.write("Atruba")
@@ -13,10 +13,8 @@
 
 // =================================================
 
-
 // function showName(name){
 //     console.log("welcome", name);
-
 
 // }
 
@@ -32,7 +30,6 @@
 // addData(10, 20)
 
 // =================================================
-
 
 // function addData(num1,num2=1){
 // console.log(num1+num2);
@@ -59,7 +56,6 @@
 // console.log(addData(10, 20));
 // console.log(addData(10));
 
-
 // =================================================
 
 // function taxCal(price) {
@@ -71,11 +67,8 @@
 
 // console.log(taxCal(ProductPrice) + ProductPrice);
 
-
-
 // =================================================
 // Anonymous Function
-
 
 // let welcome = function () {
 //     console.log("welcome ");
@@ -83,8 +76,6 @@
 // }
 
 // welcome();
-
-
 
 // let welcome = function (name) {
 //     console.log("welcome " + name);
@@ -126,27 +117,17 @@
 
 // showData();
 
-
-
 // let showData=(n,m)=>{
 // return n+m
 // }
 
 // console.log(showData(2,3));
 
-
-
-
-
 // let showData=(n,m)=>n+m
 // console.log(showData(2,3));
 
-
-
-
 // let showData = x => x * x * x
 // console.log(showData(2));
-
 
 // =================================================
 
@@ -166,20 +147,17 @@
 
 // checkVowels("Atruba")
 
-
 // =================================================
 // FACTORIAL PROGRAM
 
 // let factorial = (num) => {
-//     let fac = 1;
-//     for (i = 1; i <= num; i++) {
-//         fac *= i
-//     }
+//   let fac = 1;
+//   for (i = 1; i <= num; i++) {
+//     fac *= i;
+//   }
 
-//     return fac
-
-
-// }
+//   return fac;
+// };
 
 // console.log(factorial(5));
 
@@ -188,48 +166,33 @@
 
 // let wordsCheck = (str) => {
 
+    
+//in my opinion this one correct for check words
 
-//     //in my opinion this one correct for check words
+// let res = str.split(" ");
+// let word = 0;
 
-//     let res = str.split(" ");
-//     let word = 0;
-//     for (let v of res) {
-//         if (!v == " ") {
-//             word++;
-//         }
+// for (let v of res) {
+//     if (!v == " ") {
+//         word++;
 //     }
+// }
 
 //     console.log("Answer " + word);
 
+//in my opinion this one is not correct for check words
 
+//   let word = 1;
+//   for (let v of str) {
+//     // console.log(v);
+//     if (v == " ") {
+//       word++;
+//     }
+//   }
 
+//   console.log(word);
+// };
 
-
-//     //in my opinion this one is not correct for check words
-
-
-
-
-//     //     let word = 1;
-//     //     for (let v of str) {
-//     //         // console.log(v);
-//     //         if (v == " ") {
-//     //             word++;
-//     //         }
-
-//     //     }
-
-//     // console.log(word);
-
-
-
-// }
-
-// wordsCheck("syeda atruba abid ali            ")
-
-
-
-
-
+// wordsCheck("syeda atruba abid ali            ");
 
 // COMPLETED

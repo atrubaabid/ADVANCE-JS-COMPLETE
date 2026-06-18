@@ -5,6 +5,9 @@
 // document.write("Hello World")
 
 
+// =====================================================================
+
+
 
 //VARIABLES
 
@@ -13,6 +16,7 @@
 // const o = 50
 
 
+// =====================================================================
 
 
 //TEMPLATE LITERALS
@@ -21,6 +25,7 @@
 // let d = "string";
 // let a = true;
 // console.log(`Hello World ${v + ' ' + d + ' ' + a}`);
+
 // document.write(`<h1> Hello World ${v + ' ' + d + ' ' + a} <h1/>`);
 // console.log(`
 //     1 MY
@@ -29,6 +34,7 @@
 //     4 ATRUBA`);
 
 
+// =====================================================================
 
 
 // DATA TYPES
@@ -50,20 +56,19 @@
 // console.log(f, typeof (f));
 
 
+// =====================================================================
+
 
 //2. NON-PRIMITIVE DATA TYPES
 
 // let g = [10, 20, 30, 40, 50];               //Array       types of object
 // console.log(g, typeof (g));
 
-
 // let obj = {                                  //Object       types of object
 //     name: 'Atruba',
 //     class: 'Graduation'
 // }
 // console.log(obj, typeof (obj));
-
-
 
 // function showdata() {                          //Function
 
@@ -72,6 +77,8 @@
 // console.log(showdata, typeof (showdata));
 
 
+
+// =====================================================================
 
 
 //CONVERT STRINGS INTO NUMBERS
@@ -93,6 +100,9 @@
 // console.log(a, typeof(a));
 
 
+// =====================================================================
+
+
 // QUESTION:NO:1
 
 // let name = "Atruba";
@@ -106,9 +116,10 @@
 
 // QUESTION:NO:2
 
-// let a=20;
+// let a = 20;
 // console.log(a);
-// console.log(a=23);
+// console.log(a = 23);
+// console.log(a);
 
 // QUESTION:NO:3
 
@@ -136,6 +147,7 @@
 //      4 ATRUBA`);
 
 
+// =====================================================================
 
 
 //OPERATORS AND CONDITIONAL STATEMENT
@@ -152,7 +164,6 @@
 // console.log(a**b);
 // console.log(a++);
 // console.log(a--);
-
 
 // 2. ASSIGNMENT OPERATORS
 
@@ -179,13 +190,11 @@
 // console.log(a < b < c);    //true 1<c true
 // console.log((a<b)+5);       //true 1+5
 
-
 // 4. LOGICAL OPERATORS
 
-// console.log(10<20 && 20>10); //give true we all cond true
-// console.log(10<20 || 20>10); //give true even one cond true
-// console.log(!(10!=10));  //reverse the answers
-
+// console.log(10 < 20 && 20 > 10); //give true when all cond true
+// console.log(10 < 20 || 20 > 10); //give true even one cond true
+// console.log(!(10 != 10)); //reverse the answers
 
 // 5. STRING OPERATORS
 
@@ -205,11 +214,9 @@
 // let result = (num1 > num2) ? num1 : num2;
 // console.log(result);
 
-
-
 // IF STATEMENT
 
-// if (false) {
+// if (true) {
 //     console.log("Atruba");
 // }
 
@@ -218,8 +225,6 @@
 // if (score == 50) {
 //     console.log("Atruba");
 // }
-
-
 
 // IF-ELSE STATEMENT
 
@@ -234,7 +239,10 @@
 // }
 
 
-// let num1 = +prompt("Enetr any Number to checj its EVEN or ODD");
+// =====================================================================
+
+
+// let num1 = +prompt("Enter any Number to check its EVEN or ODD");
 // if(num1%2===0){
 //     console.log(`${num1} is even`);
 
@@ -244,8 +252,10 @@
 // }
 
 
-// IF ELSE-IF ELSE STATEMENT
+// =====================================================================
 
+
+// IF ELSE-IF ELSE STATEMENT
 
 // let GradeScore = +prompt("Enter your grade score");
 // if (GradeScore >= 90) {
@@ -263,13 +273,15 @@
 // }
 
 
+// =====================================================================
+
 
 // NESTED IF-ELSE STATEMENT
 
 // let userName = "admin";
 // let password = 12345;
 
-// let userNameInput = prompt("Enetr your username");
+// let userNameInput = prompt("Enter your username");
 
 // if (userNameInput == userName) {
 //     let passwordInput = +prompt("Enter your password");
@@ -281,37 +293,36 @@
 
 //     }
 
-
 // } else {
 //     console.log("kindly add correct username");
 
 // }
 
 
+
+// =====================================================================
+
+
 //SWITCH CASE
 
-// let light = "ggg";
+// let light = "gg";
 // switch (light) {
-//     case "red":
-//         console.log("Stop");
-//         break;
+//   case "red":
+//     console.log("Stop");
+//     break;
 
-//     case "yellow":
-//         console.log("Ready");
-//         break;
+//   case "yellow":
+//     console.log("Ready");
+//     break;
 
-//     case "green":
-//         console.log("Go");
-//         break;
+//   case "green":
+//     console.log("Go");
+//     break;
 
-//     default:
-//         console.log("invalid light");
-//         break;
-
-
+//   default:
+//     console.log("invalid light");
+//     break;
 // }
-
-
 
 // ==============================================
 
@@ -363,6 +374,10 @@
 
 // }
 
+//=====================================================================
+
+
+
 
 // QUESTION 1
 // let num = +prompt("Enter any number");
@@ -376,6 +391,9 @@
 // }
 
 
+// =====================================================================
+
+
 // QUESTION 2
 
 // let year = +prompt("Enter to check year");
@@ -387,6 +405,10 @@
 //     console.log("Not a leap Year");
 
 // }
+
+
+// =====================================================================
+
 
 // QUESTION 3
 
@@ -408,6 +430,9 @@
 //     console.log("Negative Number");
 
 // }
+
+
+// =====================================================================
 
 
 //PRACTICE QUESTION
@@ -432,6 +457,10 @@
 
 // }
 
+
+// =====================================================================
+
+
 //FOR LOOP
 // for (i = 0; i <= 10; i++) {
 //     console.log("Atruba", i);
@@ -451,12 +480,9 @@
 //     }
 // }
 
-
 // for (i = 3; i <= 100; i+=3) {
 //     console.log("Atruba", i);
 // }
-
-
 
 //WHILE LOOP
 
@@ -467,7 +493,6 @@
 //     i++;
 // }
 
-
 //DO-WHILE LOOP
 
 // let s = 1;
@@ -475,8 +500,6 @@
 //     console.log(s);
 //     s++
 // } while (s <= 10)
-
-
 
 //BREAK
 
@@ -501,8 +524,6 @@
 
 // }
 
-
-
 //FOR-OF LOOP               separate value in evry single line
 
 // let a="atruba";
@@ -511,50 +532,46 @@
 
 // }
 
-
 // let b=["1r",2,3,4,5,6,7];
 // for(let v of b){
 //     console.log(v);
 
 // }
 
-
 //FOR-IN LOOP               its return index and key
 
 // let b = ["1r", 2, 3, 4, 5, 6, 7];
 // for (let k in b) {
 //     console.log(k, b[k]);
-
 // }
-
 
 //PRACTICE
 
 // for (i = 1; i <= 10; i++) {
 //     console.log(`2 * ${i} = ${i * 2}`);
-
 // }
+
 
 
 // let sum = 0;
 
 // for (i = 0; i <= 10; i++) {
 //     console.log(sum = sum + i);
-
 // }
+// console.log(sum);
+
+
 
 
 // for (i = 1; i <= 10; i++) {
 //     for (j = 1; j <= 10; j++) {
 //         document.write("*");
-
 //     }
-
 
 //     document.write("<br>");
 
-
 // }
+
 
 
 // TABLES
@@ -568,8 +585,9 @@
 
 //     document.write("<br>")
 
-
 // }
+
+
 
 
 // for (i = 1; i <= 5; i++) {
@@ -579,8 +597,13 @@
 //     document.write("<br>");
 // }
 
+
+
+
 // document.write(" <br>");
 // document.write(" <br>");
+
+
 
 
 // for (i = 5; i >= 1; i--) {
@@ -589,6 +612,8 @@
 //     }
 //     document.write("<br>");
 // }
+
+
 
 
 //PRACTICE QUESTION
@@ -601,19 +626,16 @@
 // }
 
 
+
 // for (i = 20; i >= 1; i--) {
 //     console.log(i);
 
 // }
 
-
 // =====================================================================/
-
-
 
 // let num = +prompt("Enter any number");
 // let isPrime = true;
-
 
 // for (i = 2; i < num; i++) {
 
@@ -623,7 +645,6 @@
 //     }
 // }
 
-
 // if (isPrime) {
 //     console.log("PRIME NUMBER");
 
@@ -632,8 +653,7 @@
 
 // }
 
-// =====================================================================/
-
+// =====================================================================
 
 // let num = +prompt("Enter any number");
 // let addnumber = 0;
@@ -655,26 +675,21 @@
 //     console.log("NOT A PERFECT NUMBER");
 // }
 
-// =====================================================================/
+// =====================================================================
 
-
-// let num = ;
+// let num = 23;
 // let reverse = 0;
 
-
 // while (num > 0) {
-//     let lastdigit = num % 10;
+//     let lastdigit = num % 10;                //3
 //     reverse = reverse * 10 + lastdigit;
 //     num = parseInt(num / 10)
-
 
 // }
 
 // console.log(reverse);
 
-
-
-// =====================================================================/
+// =====================================================================
 
 // let count = 1;
 // for (i = 1; i <= 4; i++) {
@@ -685,63 +700,8 @@
 //     }
 //     document.write("<br>");
 
-
 // }
-
 
 // =====================================================================/
 
 // COMPLETED
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
