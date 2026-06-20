@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    .main {
+        width: 100%;
+
+        & h1 {
+            text-align: center;
+            padding: 50px;
+        }
+    }
+
+    .allQ {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .faq {
+        border: 1px solid black;
+        margin-bottom: 20px;
+
+        & h3 {
+            padding: 20px;
+            border-bottom: 1px solid black;
+            position: relative;
+
+            & span {
+                position: absolute;
+                right: 20px;
+            }
+        }
+
+        & p {
+
+            padding: 20px;
+            display: none;
+
+
+        }
+    }
+
+    .show {
+        display: block;
+    }
+</style>
+
+<body>
+
+
+    <div class="main">
+        <h1>FAQ Accordions</h1>
+
+        <div class="allQ">
+
+            <div class="faq">
+                <h3>What is HTML? <span>+</span></h3>
+                <p class="ans">HTML (HyperText Markup Language) is the standard language used to create the structure of
+                    web pages.</p>
+            </div>
+
+
+            <div class="faq">
+                <h3>What is CSS? <span>+</span></h3>
+                <p class="ans">CSS (Cascading Style Sheets) is used to style and format HTML elements. It controls
+                    colors, fonts, layouts, spacing, and responsive design.</p>
+            </div>
+
+            <div class="faq">
+                <h3>What is JavaScript? <span>+</span></h3>
+                <p class="ans">JavaScript is a programming language that adds interactivity and dynamic behavior to
+                    websites, such as form validation, animations, and updating content without reloading the page</p>
+            </div>
+
+            <div class="faq">
+                <h3>What is the difference between id and class in HTML? <span>+</span></h3>
+                <p class="ans">id is unique and should be used for a single element.
+                    class can be used on multiple elements.</p>
+            </div>
+
+            <div class="faq">
+                <h3>What is Responsive Web Design? <span>+</span></h3>
+                <p class="ans">Responsive Web Design ensures that a website looks and functions well on all devices,
+                    including desktops, tablets, and smartphones. It commonly uses CSS media queries and flexible
+                    layouts.</p>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+</body>
+
+<script>
+
+    let allquestion = document.querySelectorAll(".faq");
+
+    allquestion.forEach((ques, idx) => {
+        ques.addEventListener("click", () => {
+            console.log(idx);
+
+            allquestion.forEach((q, i) => {
+                // other ans display none
+                if (idx != i) {
+                    q.lastElementChild.style.display = "none";
+                }
+
+            })
+
+            // span tag
+            if (ques.firstElementChild.lastElementChild.innerHTML == "+") {
+                ques.firstElementChild.lastElementChild.innerHTML = "-"
+
+            } else {
+                ques.firstElementChild.lastElementChild.innerHTML = "+"
+            }
+            // ans dispaly
+            ques.lastElementChild.style.display = "block";
+
+
+        })
+
+    })
+
+</script>
+
+</html>
