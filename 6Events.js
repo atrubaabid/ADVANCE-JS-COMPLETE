@@ -90,7 +90,7 @@
 // resize      = window size change
 
 
-// LOAD
+// // LOAD
 // let mainDiv = document.querySelector(".main");
 // window.addEventListener("load", () => {
 //     mainDiv.style.display = "block"
