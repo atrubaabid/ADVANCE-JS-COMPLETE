@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+
+    }
+
+    .form-section {
+        width: 100%;
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: 50% auto;
+        gap: 3rem;
+
+        & form {
+            margin-left: 2rem;
+            box-shadow: 0 0 10px 0 rgb(154, 154, 154);
+            padding: 2rem;
+
+            & h1 {
+                text-align: center;
+                margin-bottom: 2rem;
+
+            }
+
+            & div {
+                margin-bottom: 1rem;
+            }
+
+            & div label {
+                display: block;
+                margin-bottom: 0.2rem;
+
+            }
+
+            & div input {
+                width: 100%;
+                padding: 0.5rem;
+            }
+
+            & button {
+                width: 100%;
+                padding: 0.6rem;
+                background-color: blue;
+                color: white;
+                border-radius: 5px;
+                border: none;
+
+            }
+        }
+    }
+
+    .t {
+
+        margin-right: 2rem;
+
+        & .tablee {
+            width: 100%;
+        }
+
+        & th,
+        td {
+            padding: 1rem;
+            border: 1px solid black;
+        }
+
+        & th {
+            background-color: rgb(228, 228, 228);
+        }
+
+        & td button {
+            padding: 0.5rem;
+            background-color: red;
+            color: white;
+            border-radius: 5px;
+            border: none;
+        }
+
+
+    }
+</style>
+
+<body>
+
+    <section class="form-section">
+
+        <form>
+            <h1>Enquiry Form</h1>
+
+            <div>
+                <label>Name</label>
+                <input type="text" placeholder="Enter your name" name="username">
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="text" placeholder="Enter your email" id="email" name="email">
+            </div>
+
+            <div>
+                <label for="phone">Phone</label>
+                <input type="text" placeholder="Enter your phone number" id="phone" name="phone">
+            </div>
+
+            <button>Save</button>
+
+        </form>
+
+        <div class="t">
+
+            <table class="tablee">
+                <thead>
+                    <tr>
+                        <th>S:no</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+
+
+
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+</body>
+<script>
+    let form = document.querySelector("form");
+    // convert all user data from object into array
+    let allData = [];
+
+    form.addEventListener("submit", (e) => {
+        // stop reloading
+        e.preventDefault();
+        // get all input values
+        let username = e.target.username.value;
+        let uemail = e.target.email.value;
+        let uphone = e.target.phone.value;
+
+        // convert all user information into object
+
+        let dataObj = {
+            username,
+            uemail,
+            uphone
+        }
+
+        // check same email exist
+
+        let checkemail = allData.find((items, i) => items.uemail == uemail);
+
+
+        if (checkemail) {
+            alert("email already exist");
+        } else {
+
+            // push all the user data from obj in allData
+            allData.push(dataObj);
+            // update user data in table
+            tableUpdate();
+
+        }
+
+
+        // reset the form after submit
+        e.target.reset();
+
+    })
+
+
+
+
+    let table = document.querySelector("tbody");
+    // function for update user data in table
+    let tableUpdate = () => {
+        let tableRow = '';
+        allData.forEach((v, i) => {
+
+            tableRow += `<tr>
+                       <td >${i + 1}</td >
+                        <td>${v.username}</td>
+                        <td>${v.uemail}</td>
+                        <td>${v.uphone}</td>
+                        <td><button id = ${i} >Delete</button></td>
+                    </tr>`
+
+        })
+
+
+        table.innerHTML = tableRow;
+
+    }
+
+    // event for delete button
+
+    table.addEventListener("click", (e) => {
+
+        if (e.target.tagName == "BUTTON") {
+
+            if (confirm("Are you sure want to delete")) {
+
+                let delId = e.target.getAttribute("id");
+                allData.splice(delId, 1);
+                tableUpdate();
+            }
+
+
+
+        }
+
+    })
+
+</script>
+
+</html>
