@@ -19,13 +19,19 @@
         width: 100%;
         margin-top: 3rem;
         display: grid;
-        grid-template-columns: 50% auto;
+        grid-template-columns: 35% auto;
         gap: 3rem;
 
         & form {
             margin-left: 2rem;
             box-shadow: 0 0 10px 0 rgb(154, 154, 154);
             padding: 2rem;
+
+            & .error {
+                font-size: 15px;
+                color: red;
+                margin: 1rem auto;
+            }
 
             & h1 {
                 text-align: center;
@@ -97,6 +103,8 @@
         <form>
             <h1>Enquiry Form</h1>
 
+            <div class="error"></div>
+
             <div>
                 <label>Name</label>
                 <input type="text" placeholder="Enter your name" name="username">
@@ -104,7 +112,7 @@
 
             <div>
                 <label for="email">Email</label>
-                <input type="text" placeholder="Enter your email" id="email" name="email">
+                <input type="email" placeholder="Enter your email" id="email" name="email">
             </div>
 
             <div>
@@ -148,6 +156,7 @@
 </body>
 <script>
     let form = document.querySelector("form");
+    let errorDiv = document.querySelector(".error")
     // convert all user data from object into array
     let allData = [];
 
@@ -173,7 +182,11 @@
 
 
         if (checkemail) {
-            alert("email already exist");
+            errorDiv.innerHTML = "email already exist....."
+            setTimeout(() => {
+                errorDiv.innerHTML = ""
+            }, 2000)
+
         } else {
 
             // push all the user data from obj in allData

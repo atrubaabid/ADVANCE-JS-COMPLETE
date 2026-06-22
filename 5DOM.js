@@ -208,6 +208,11 @@
 
 // })
 
+// setTimeout(() => {
+//     div.style.top = "50%"
+
+// }, 2000)
+
 // btn.addEventListener("click", () => {
 //     div.style.top = "50%"
 // })
