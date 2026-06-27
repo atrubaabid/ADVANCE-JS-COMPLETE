@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST APP</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            width: 100%;
+            background-color: rgb(228, 177, 253);
+
+        }
+
+
+        .todo {
+            width: 80%;
+            margin: 30px auto;
+            background-color: white;
+            box-shadow: 0px 0px 5px 0px rgb(95, 95, 95);
+            border-radius: 15px;
+            padding: 2rem;
+
+            & h1 {
+                text-align: center;
+                color: darkmagenta;
+                font-weight: 900;
+                margin-bottom: 1.5rem;
+            }
+
+            & .input {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                padding: 0 0.5rem;
+
+                & input {
+                    width: 70%;
+                    padding: 0.3rem 0.5rem;
+                    border: 2px solid darkmagenta;
+                    border-radius: 5px;
+
+
+
+                }
+
+                & button {
+                    width: 20%;
+                    background-color: darkmagenta;
+                    color: white;
+                    padding: 0.4rem 0.5rem;
+                    border: none;
+                    border-radius: 5px;
+
+
+                }
+            }
+
+
+
+
+            & .items ul li {
+                margin-bottom: 10px;
+                list-style-type: none;
+                background-color: rgb(228, 177, 253);
+                padding: 0.5rem 1rem;
+                border-radius: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: darkmagenta;
+                font-weight: 900;
+
+                & span {
+                    width: 1.5rem;
+                    text-align: center;
+                    aspect-ratio: 1;
+                    background-color: darkmagenta;
+                    color: white;
+                    /* padding: 3px; */
+                    border-radius: 7px;
+                    font-size: 15px;
+                }
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="todoApp">
+        <div class="todo">
+            <h1>TODO APP</h1>
+
+            <div class="input">
+                <input type="text" placeholder="Enter your list items">
+                <button>Save</button>
+            </div>
+            <div class="items">
+
+                <ul>
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+
+    let savebtn = document.querySelector(".input button");
+    let input = document.querySelector(".input input")
+    let itembody = document.querySelector("ul")
+    console.log(itembody);
+
+    let todoitems = localStorage.getItem("Item") ? JSON.parse(localStorage.getItem("Item")) : [];
+
+    savebtn.addEventListener("click", () => {
+        let obj = {
+
+            item: input.value,
+            status: true
+        }
+
+        todoitems.push(obj)
+
+        localStorage.setItem("Item", JSON.stringify(todoitems))
+
+        showData()
+
+
+    })
+
+
+
+
+    let showData = () => {
+        let row = "";
+        let todoitems = localStorage.getItem("Item") ? JSON.parse(localStorage.getItem("Item")) : [];
+
+        // style="text-decoration: line-through;
+
+        todoitems.forEach((items, index) => {
+            row += `<li> <div onclick="taskcomplete(${index})"
+                style="text-decoration:${items.status ? '' : 'line-through'}" > ${index} ${items.item} </div><span onclick="deletedata(${index})">&times;</span></li>`
+
+            console.log(items.status);
+
+
+        });
+
+        itembody.innerHTML = row;
+        input.value = ""
+
+    }
+
+
+
+    showData()
+
+    // taskcomplete
+    let taskcomplete = (curridx) => {
+
+        todoitems[curridx].status = !todoitems[curridx].status;
+        localStorage.setItem("Item", JSON.stringify(todoitems))
+        showData();
+    }
+
+    //delete data
+
+
+    let deletedata = (dltidx) => {
+
+        todoitems.splice(dltidx, 1);
+
+        localStorage.setItem("Item", JSON.stringify(todoitems));
+
+        showData();
+
+    }
+
+
+
+
+
+</script>
+
+
+</html>
