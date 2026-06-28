@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FETCH MINI PROJRCT</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .fetch-mini-project {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(231, 230, 230);
+        padding: 0 1rem;
+
+        & h1 {
+            text-align: center;
+            padding: 2rem 0;
+        }
+    }
+
+    .product-row {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 20% auto;
+        gap: 20px;
+
+
+        & .category {
+            background-color: white;
+            box-shadow: 0 0 10px 2px #ccc;
+
+
+
+            & ul {
+                list-style-type: none;
+                padding: 2rem;
+
+
+                & li {
+                    margin-bottom: 1rem;
+                    color: blue;
+                }
+            }
+
+
+        }
+
+        & .product-list {
+            padding: 4rem 2rem;
+            background-color: white;
+            box-shadow: 0 0 10px 2px #ccc;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 50px;
+            align-items: start;
+
+
+            & .product {
+                border-radius: 20px;
+                box-shadow: 0 0 10px 2px #ccc;
+
+
+                & img {
+                    width: 100%;
+                    aspect-ratio: 1;
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+
+                }
+
+                & .card {
+                    margin: 1.5rem 1rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    & button {
+                        padding: 6px;
+                        border-radius: 6px;
+
+                    }
+                }
+
+                & h3 {
+
+                    border-bottom-left-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                    text-align: center;
+                    padding: 1rem;
+                    background-color: rgb(0, 247, 255);
+
+                }
+
+            }
+
+        }
+
+
+
+    }
+
+    .activecat {
+        background-color: blue;
+        color: white !important;
+        padding: 0.3rem;
+    }
+</style>
+
+<body>
+
+    <section class="fetch-mini-project">
+        <h1>PRODUCTS</h1>
+        <div class="product-row">
+
+            <aside class="category">
+                <h1>CATEGORIES</h1>
+                <ul id="cate">
+                </ul>
+            </aside>
+
+            <div class="product-list">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+
+        // ALL-CATEGORIES
+
+        let allcateshow = document.querySelector("#cate");
+        let allprods = document.querySelector(".product-list");
+
+
+        let getcategories = () => {
+
+            let allcate = '';
+            fetch("https://dummyjson.com/products/categories")
+                .then((res) => {
+                    return res.json()
+                })
+                .then((finalcate) => {
+                    finalcate.forEach(element => {
+
+                        allcate += `<li data-cate=${element.name} class=${element.name == slug ? "activecat" : ""}> ${element.name}</li>`;
+
+
+                    });
+                    allcateshow.innerHTML = allcate;
+
+                })
+
+
+        }
+
+        getcategories()
+
+        // ALL-PRODUCTS
+
+        let allprodsShow = (getcate = '') => {
+            let APIdata;
+            if (getcate == '') {
+                APIdata = "https://dummyjson.com/products"
+            } else {
+                APIdata = `https://dummyjson.com/products/category/${getcate}`
+            }
+
+            let allproductsShow = '';
+
+            fetch(APIdata)
+                .then((res) => {
+                    return res.json()
+                })
+                .then((finalres) => {
+                    let allproducts = finalres.products;
+                    allproducts.forEach((items) => {
+
+                        allproductsShow += `  <div class="product">
+
+                    <div class="imgg">
+                        <img src="${items.thumbnail}"
+                            alt="">
+                    </div>
+
+                    <div class="card">
+                        <b>RS ${items.price}</b>
+                        <button>Add to cart</button>
+                    </div>
+                    <h3>${items.title}</h3>
+
+                </div>`
+
+
+
+
+                    })
+
+                    allprods.innerHTML = allproductsShow
+                })
+        }
+
+        allprodsShow()
+
+
+        // CATEGORY-WISE-
+        let slug = '';
+
+        allcateshow.addEventListener("click", (e) => {
+            if (e.target.tagName == "LI") {
+
+                slug = e.target.getAttribute("data-cate");
+                allprodsShow(slug)
+                getcategories()
+
+            }
+
+        })
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
