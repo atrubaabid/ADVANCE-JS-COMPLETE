@@ -21,7 +21,7 @@
 
 
         .todo {
-            width: 80%;
+            width: 50%;
             margin: 30px auto;
             background-color: white;
             box-shadow: 0px 0px 5px 0px rgb(95, 95, 95);
@@ -153,7 +153,7 @@
 
         todoitems.forEach((items, index) => {
             row += `<li> <div onclick="taskcomplete(${index})"
-                style="text-decoration:${items.status ? '' : 'line-through'}" > ${index} ${items.item} </div><span onclick="deletedata(${index})">&times;</span></li>`
+                style="text-decoration:${items.status ? '' : 'line-through'}" > ${index + 1} ${items.item} </div><span onclick="deletedata(${index})">&times;</span></li>`
 
             console.log(items.status);
 
@@ -161,7 +161,7 @@
         });
 
         itembody.innerHTML = row;
-        input.value = ""
+        // input.value = ""
 
     }
 
